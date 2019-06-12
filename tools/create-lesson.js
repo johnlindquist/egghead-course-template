@@ -34,5 +34,5 @@ fs.copySync(`./lessons/${sourceDir}`, `./lessons/${newDir}`)
 const editJsonFile = require("edit-json-file")
 const packageJson = editJsonFile(`./lessons/${newDir}/package.json`)
 
-packageJson.set("name", lessonName)
+packageJson.set("name", newDir)
 packageJson.save()
